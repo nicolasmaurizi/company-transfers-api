@@ -1,0 +1,17 @@
+import { Inject } from '@nestjs/common';
+import { CompanyRepository } from '../../domain/repositories/CompanyRepository';
+import { Company } from '../../domain/entities/Company';
+
+export class FindCompaniesByTransferLastMonth {
+  constructor(
+    @Inject('CompanyRepository')
+    private readonly repo: CompanyRepository,
+  ) {}
+
+  async execute(): Promise<Company[]> {
+    const now = new Date();
+    const nowUtc = new Date();
+    const lastMonthUtc = new Date(nowUtc.getTime() - 30 * 24 * 60 * 60 * 1000);
+    return this.repo.findTransferredSince(lastMonthUtc);
+  }
+}

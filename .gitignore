@@ -1,0 +1,67 @@
+# ============================
+# Node.js / NestJS .gitignore
+# ============================
+
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Runtime
+*.pid
+*.seed
+*.pid.lock
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Coverage
+coverage/
+.nyc_output/
+
+# IDE/editor configs
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+
+# Misc
+*.tgz
+*.local
+.cache/
+*.bak
+*.orig
+*.swp
+
+# Lint/format
+.eslintcache
+.prettierignore
+
+# Testing
+jest.config.ts
+test-results/
+
+# Prisma
+prisma/migrations/
+
+# Documentation
+*.doc.t
