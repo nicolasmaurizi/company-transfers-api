@@ -14,7 +14,7 @@ API REST desarrollada con NestJS siguiendo principios de Clean Architecture, ori
 
 ## 🧱 Arquitectura
 
-![Arquitectura](assets/images/architectura.png)
+![Arquitectura](assets/images/arquitectura.png)
 Descripción
 
 La aplicación está diseñada siguiendo los principios de Clean Architecture, separando claramente las responsabilidades y evitando el acoplamiento entre el dominio y los detalles de infraestructura.
