@@ -14,7 +14,7 @@ API REST desarrollada con NestJS siguiendo principios de Clean Architecture, ori
 
 ## 🧱 Arquitectura
 
-![Arquitectura](assets/images/architecture.png)
+![Arquitectura](assets/images/architectura.png)
 Descripción
 
 La aplicación está diseñada siguiendo los principios de Clean Architecture, separando claramente las responsabilidades y evitando el acoplamiento entre el dominio y los detalles de infraestructura.
@@ -46,7 +46,7 @@ Cambiar la base de datos o el framework sin afectar el dominio
 Mantener un diseño claro y escalable
 
 🗄️ Modelo de Datos
-![Arquitectura](assets/images/data-model.png)
+![Arquitectura](assets/images/modelo-datos.png)
 Descripción
 
 El modelo de datos representa las entidades principales del sistema y sus relaciones, persistidas en PostgreSQL utilizando timestamptz para asegurar consistencia temporal en UTC.
